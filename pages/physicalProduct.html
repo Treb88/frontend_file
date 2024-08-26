@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='../index.html'" class="header-left">JNet</div>
+        <div class="header-right">
+            <div>Contact</div>
+            <div onclick="window.location.href='cart.html'" class="cart-counter">Cart (<span class="js-cart-counter">0</span>)</div>
+        </div>
+    </header>
+
+    <nav class="topBar">
+        <ul>
+            <li><a href="products.html">Available Products</a></li>
+            <li class="active"><a href="/pages/physicalProduct.html">Products</a></li>
+            <li><a href="voucherProduct.html">Vouchers</a></li>
+        </ul>
+    </nav> 
+
+    <main>
+        <div class="content">          
+            <div class="product-list js-product-list-physical">
+                
+            </div>
+        </div>   
+        
+    </main>
+
+    <footer class="footerProducts">
+        <p>&copy; 2024 JNet. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="../js/physicalProduct.js"></script>
+</body>
+</html>

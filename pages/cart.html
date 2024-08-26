@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='../index.html'" class="header-left">JNet</div>
+        <div class="header-right">
+            <div>Contact</div>
+            <div onclick="window.location.href='cart.html'" class="cart-counter">Cart (<span class="js-cart-counter">0</span>)</div>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="cart-table">
+                <div class="js-cart-item">
+                    <!-- dynamically loaded -->
+                </div>
+                
+                <div>
+                    <div class="cart-total">
+                        <p>Total Price</p>
+                        <p class="js-cart-total-price">₱ 0.00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkout-form">
+                <div class="js-checkout-form">
+                    <div>
+                        <span>Full Name</span>
+                        <input type="text" class="js-full-name">
+                    </div>
+                    <div>
+                        <span>Mobile Number</span>
+                        <input type="number" class="js-mobile-number">
+                    </div>
+                    <div>
+                        <button class="pay-now js-submit-pay-now">
+                        Pay Now
+                        </button>
+                    </div>
+                </div> 
+                <div>
+                    <button class="pay-now js-pay-now">Proceed to Checkout</button>
+                </div>              
+            </div>
+            
+        </div>
+        <div class="backBtnCont">
+            <div onclick="window.location.href='products.html'" class="backBtn">go to Shop</div>
+        </div>
+    </div>
+
+    <div class="content-your-order">
+        <h2>Your Order</h2>
+        <div class="your-order js-your-order">            
+            
+        </div>
+    </div>    
+   
+    <footer class="footer">
+        <p>&copy; 2024 JNet. All rights reserved.</p>
+    </footer>
+
+    <script type="Module" src="../js/cart.js"></script>
+</body>
+</html>
